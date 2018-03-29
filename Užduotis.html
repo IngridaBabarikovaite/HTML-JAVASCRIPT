@@ -5,8 +5,9 @@
         <meta charset="UTF-8">
         <style>
         body{
-            margin:0.5%; 
+            margin:0; 
             padding:0;
+            height:100%;
         }
         header div{
             background-color:green;
@@ -15,41 +16,47 @@
             padding:0;
         }
         .A{
-            width:65%;
+            width:64.2vw;
         }
         .B{
-            width:34vw;
+            width:34.2vw;
         }
         .Vidurys div{
             display:inline-block;
             vertical-align:top;
             margin:1px;
             padding:0;
-            height:100%;
         }
         .Left{
             background-color:yellow;
-            display:block;width:25%;
+            width:25vw;
+            display:block;
+            height:calc(100vh - 11vh - 4px);
         }
         .Center div{
             background-color:blue;
-            display:block;width:39vw;
+            display:block;
+            width:39vw;
+            height:calc(100vh - 21vh - 6px);
         }
         .Right div{
             background-color:coral;
-            display:block;width:34vw;
+            display:block;
+            width:34vw;
+            height:calc(100vh - 21vh - 5px);
+
         }
         footer{
             background-color:aqua;
+            width:98.7vw;
+            margin:1px;
+            padding:0;
         }
         .A, .B, #D, #E, footer{
-            height:5em;
+            height:5vh;
         }
         #F{
-            height:10em;
-        }
-        #C{
-            height:calc(100vh - 2*5em - 2px);overflow:auto;
+            height:10vh;
         }
         </style>
     </head>
