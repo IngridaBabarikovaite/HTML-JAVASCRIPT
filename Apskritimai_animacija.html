@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Title</title>
+        <style>
+            #container {
+                background-color: lightgray;
+                width: 50vw;
+                height: 50vw;
+                margin: auto;
+                position: relative;
+            }
+            .r, .g, .b {
+                width: 60%;
+                height: 60%;
+                font-size: 3em;
+                color: white;
+                border: 0.25em solid;
+                border-radius: 50%;
+                position: absolute;
+            }
+            .g {
+                background-color: rgba(0, 128, 0, 0.5);
+                border-color: green;
+                top:20%;
+                left:20%;
+                animation-name: pozicijaG;
+                animation-duration: 3s;
+                animation-delay:1s;
+                animation-fill-mode: forwards;
+            }
+            .b {
+                background-color: rgba(0, 0, 128, 0.5);
+                border-color: blue;
+                top:20%;
+                left:20%;
+                animation-name: pozicijaB;
+                animation-duration: 3s;
+                animation-delay:1s;
+                animation-fill-mode: forwards;
+            }
+            .r {
+                background-color: rgba(128, 0, 0, 0.5);
+                border-color: red;
+                top:20%;
+                left:20%;
+                animation-name: pozicijaR;
+                animation-duration: 3s;
+                animation-delay:1s;
+                animation-fill-mode: forwards;
+            }
+            .t {
+                text-align: center;
+                position: relative;
+                top: calc(50% - 0.5em);
+            }
+            @keyframes pozicijaG {
+                from{top:20%; left:20%;}
+                to{top:calc(40% - 0.5em); left:0%;}
+            }
+            @keyframes pozicijaB {
+                from{top:20%; left:20%;}
+                to{top:calc(40% - 0.5em); left:calc(40% - 0.5em);}
+            }
+            @keyframes pozicijaR {
+                from{top:20%; left:20%;}
+                to{top:0%; left:20%;}
+            }
+        </style>
+    </head>
+    <body>
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit euismod efficitur. Donec dapibus, ante vel vulputate placerat, neque elit fermentum urna, et convallis sem lacus ac quam. Suspendisse in ligula leo. Cras in suscipit nibh. Vestibulum blandit, lorem dapibus volutpat varius, nibh sem lacinia ipsum, quis rutrum diam orci sed magna. Quisque ut felis quis ipsum convallis ornare. Aliquam malesuada, felis sit amet luctus vestibulum, libero nunc consectetur erat, et dictum orci diam quis urna. Pellentesque luctus in justo in egestas. Morbi leo nunc, vulputate nec dictum malesuada, interdum in lorem. Phasellus ut posuere metus. Curabitur vel magna vitae ex efficitur dignissim. Duis blandit ullamcorper libero, et semper nibh ullamcorper et. Morbi tincidunt eros vel viverra aliquet. Praesent congue dapibus ante, pharetra tincidunt magna posuere vitae. Vivamus euismod aliquam turpis, at ornare libero molestie vel. Donec consequat risus nibh, eget cursus ex condimentum nec.</p>
+       <div id="container">
+            <div class="r"><div class="t">R</div></div>
+            <div class="g"><div class="t">G</div></div>
+            <div class="b"><div class="t">B</div></div>
+       </div>
+    </body>
+</html>
