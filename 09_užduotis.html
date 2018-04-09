@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>09_užduotis</title>
+        <meta charset="UTF-8">
+        <style>
+           body {
+                display:flex;
+                flex-direction:column;
+                width:100vw;
+                height:100vh;
+                background-color:tan;
+                color:white;
+            }
+            .header {
+                background-color:teal;
+                display:flex;
+                flex-direction:row;
+                color:white;
+                justify-content: space-between;
+            }
+            .tekstas {
+                display:flex;
+                flex-direction:column;
+                background-color:olive;
+                height:70vh;
+                overflow:auto;
+            }
+            #reklama {
+                background-color:slateblue;
+                display:flex;
+                justify-content: space-between;
+            }
+            .footer {
+                background-color:blue;
+                display:flex;
+                flex-direction:row;
+                justify-content:center;
+            }
+            .header, .footer {
+                height:8vh;
+            }
+            @media (max-width: 768px) {
+            body {
+                margin:0;
+            }
+            .header {
+                padding-right:2em;
+            }
+            ul li {
+                display:none;
+            }
+            .tekstas {
+                padding:1em;
+                margin-top:0.5em;
+                margin-right:2em;
+            }
+            .ad {
+                margin-right:2em;
+            }
+            #reklama {
+                display:inline-block;
+                height:14vh;
+                width:40vw;
+                margin:0.5em;
+                margin-left:1.5em;
+            }
+            .footer {
+                margin-right:2em;
+            }
+            }
+            @media (min-width: 768px){
+                body {
+                    margin:0.5em;
+                }
+                .tekstas .ad {
+                    display:flex;
+                    display: inline-block;
+                }
+                ul li {
+                display:inline-block;
+                }
+            }
+        </style>
+    </head>
+    <body>
+         <div class="header">
+            <ul id="meniu">meniu
+                <li >meniu1</li>
+                <li>meniu2</li>
+                <li>meniu3</li>
+                </ul>
+            <ul id="meniu4">meniu4</ul>
+        </div>
+        <div class="tekstas">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in suscipit diam. Nunc a aliquam purus, tempor faucibus turpis. Curabitur enim lectus, fringlila eget malesuada id, mattis aliquam massa. Phasellus scelerisque blandit finibus. Aenean et sem at nibh volutpat semper. In magna nulla, tincidunt quis purus vel, finibus gravida leo. Nam purus magna, commodo in risus sed, faucibus bibendum ipsum. Pellentesque viverra, elit ac lacinia vehicula, sapien nulla faucibus ipsum, nec porta metus dolor in odio.
+            In suscipit vestibulum condimentum. Aliquam id lorem elit. Aliquam eu sodales lacus. Quisque at finibus augue, id aliquet quam. Sed ut elit in purus bibendum congue in in dui. Maecenas ullamcorper malesuada mi. Duis blandit sollicitudin sodales. Aenean blandit purus at nulla sollicitudin, non consectetur tortor consectetur. Morbi a nibh vitae felis suscipit tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis tellus tellus, laoreet pellentesque neque id, tempor porta lacus. Sed finibus ante leo, vitae scelerisque arcu tincidunt vitae. Praesent luctus, justo in aliquet interdum, risus velit interdum justo, nec ullamcorper velit ante quis libero.
+            Aenean sed orci nunc. Proin vehicula mauris orci, in rutrum augue fringlila eget. Pellentesque tempus mauris in magna dapibus, sit amet posuere nisl hendrerit. Aliquam vitae neque sed diam commodo congue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis tempus tellus eu orci cursus, eget dapibus ex posuere. In mollis fringlila eros, ornare luctus tortor tristique vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce odio sapien, euismod eu turpis facliisis, consectetur porta lorem. Pellentesque ut pellentesque augue, in commodo nunc. Nunc vel turpis sodales, iaculis libero sit amet, efficitur libero. Suspendisse fermentum felis eget ex tempor, eu vehicula nisi maximus. Pellentesque iaculis auctor malesuada.
+            Ut enim mauris, feugiat in porta eget, dapibus nec felis. Maecenas luctus elit suscipit, tempus nisl sed, facliisis ligula. Nullam quis elementum nulla. Quisque quis dolor condimentum, tristique sapien non, blandit magna. Integer ornare, sapien eget ultrices tincidunt, purus neque fringlila arcu, quis mollis mi lectus sagittis urna. Integer eros sem, mollis non dictum vitae, viverra quis lacus. Praesent id vehicula dui. Sed eu enim vel eros faucibus bibendum. Nulla in sodales dui, ac sodales lectus. In augue justo, luctus sit amet arcu sit amet, laoreet semper justo. Aliquam convallis a ante eget suscipit. Nulla egestas efficitur volutpat. Integer sed odio sapien. Nunc eu arcu sed tortor interdum tempus gravida eget purus. Ut sit amet feugiat augue.
+            Nam consectetur nulla eu diam accumsan sollicitudin. Donec quis nulla ut nisi tincidunt porta vel sed purus. Integer dignissim aliquam scelerisque. Phasellus hendrerit nisl non tortor vestibulum, non blandit purus ornare. Phasellus in enim eu nulla venenatis suscipit eu pharetra neque. Sed pretium eros vel leo condimentum, et facliisis arcu scelerisque. Vivamus convallis sapien neque, et pharetra ligula tempus non. Aliquam dapibus rutrum finibus. Fusce id lectus sed felis pellentesque dapibus. Aenean et turpis elit. Donec ac elit dictum, iaculis justo sit amet, condimentum turpis.</div>
+        <div class="ad">
+            <div id="reklama">Reklama1</div>
+            <div id="reklama">Reklama2</div>
+            <div id="reklama">Reklama3</div>
+            <div id="reklama">Reklama4</div>
+        </div>
+        <div class="footer">Kontaktai</div>
+    </body>
+</html>
