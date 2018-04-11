@@ -11,20 +11,35 @@
 
         <title>09_realus puslapis</title>
         <style>
-            body {
-                padding:5%;
-            }
             .col-md-4 {
-                text-align:center;
+                padding-left:5em;
+                padding-right:1em;
+            }
+            .container{
+                border:1px solid grey;
+                padding:1em;
+                margin-top:2em;
+                margin-bottom:3.5em;
+            }
+            ul li{
+                display:inline;
+            }
+            .text-capitalize {
+                color:white;
+            }
+            .list-unstyled {
+                padding-left:4em;
             }
         </style>
     </head>
     <body>
-        <nav class="navbar navbar-inverse navbar-fixed-top navbar-nowrap">
+        <nav class="navbar navbar-default navbar-static-top navbar-nowrap">
             <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand"><img src="http://freedesignfile.com/upload/2015/08/Creative-tree-logo-vector-graphics-02.jpg" width="25px"></a>
-                </div>
+                <ul class="navbar-header">
+                    <li class="navbar-brand">
+                        <span class="text-muted">App</span><span class="text-primary">Strap</span>
+                    </li>
+                </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li role="presentation" class="nav-item">
                         <a class="glyphicon glyphicon-home text-muted" aria-hidden="true"></a>
@@ -33,60 +48,73 @@
                         <a class="text-muted small" href="#">PAGES</a>
                     </li>
                     <li role="presentation" class="nav-item">
-                        <a class="text-muted small" href="#">FEATURES</a>
+                        <a class="text-muted text-uppercase small" href="#">FEATURES</a>
                     </li>
                     <li role="presentation" class="nav-item">
-                        <a class="text-muted small" href="#">SHOP</a>
+                        <a class="text-muted text-uppercase small" href="#">SHOP</a>
                     </li>
                     <li role="presentation" class="nav-item">
-                        <a class="text-muted small" href="#">ELEMENTS</a>
+                        <a class="text-muted text-uppercase small" href="#">ELEMENTS</a>
                     </li>
                     <li role="presentation" class="nav-item">
-                        <a class="text-muted small" href="#">MEGA MENU</a>
+                        <a class="text-muted text-uppercase small" href="#">MEGA MENU</a>
                     </li>
-                    <ul class="input-group">
-                        <input type="text" class="form-control" placeholder="Search">
-                        <li class="input-group-btn text-muted">
-                        <button class="btn btn-default" type="submit">
-                            <a class="glyphicon glyphicon-search"></a>
-                        </button>
-                        </li>
-                    </ul>
+                    <li role="presentation" class="nav-item">
+                        <a class="glyphicon glyphicon-search text-muted"></a>
+                    </li>
                 </ul>
             </div>
         </nav>
         <nav class="container-fluid">
-            <form class="container mr-auto" style="width:20%;">
-                <div class="header"><h2>Login</h2></div>
+            <form class="container" style="width:20%;">
+                <div class="header"><h3>Login</h3><hr></div>
                 <small class="form-text text-muted">Not signed up?<a href="#">Sign up here</a></small>
                 <div class="form-group">
-                    <input type="email" class="form-control-sm" id="exampleInputEmail1" placeholder="Email">
+                    <input type="email" class="form-control-md" id="exampleInputEmail1" placeholder="Email">
                 </div>
                 <div class="form-group">
-                    <input type="password" class="form-control-sm" id="exampleInputPassword1" placeholder="Password">
+                    <input type="password" class="form-control-md" id="exampleInputPassword1" placeholder="Password">
                 </div>
-                    <input type="submit" class="btn btn-info" value="Login"><small class="form-text"><a href="#">Forgotten password?</a></small>
+                    <input type="submit" class="btn btn-info" value="Login">
+                    <small class="form-text"><a href="#">Forgotten password?</a></small>
             </form>
         </nav>
-        <div class="container-fluid">
-            <div></div>
-            <div></div>
+        <div class="container-fluid" style="background-color:teal">
+            <ul class="header list-unstyled"><h2>Awesome features</h2>
+                <li>
+                    <a class="text-capitalize">99.9% Uptime</a>
+                </li>/
+                <li>
+                    <a class="text-capitalize">Free Upgrades</a>
+                </li>/
+                <li>
+                    <a class="text-capitalize">Fully Responsive</a>
+                </li>/
+                <li>
+                    <a class="text-capitalize">Bug Free</a>
+                </li>
+            </ul>
+            <ul></ul>
         </div>
-        <div class="container-fluid navbar-fixed-bottom">
+        <div class="container-fluid navbar-inverse">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 text-muted">
                     <h3>Contact us</h3>
-                    <p>019223 8092344</p>
-                    <p>info@appstraptheme.com</p>
-                    <p>Sunshine House, Sunville, SUN12 8LU</p>
+                    <p class="text-left">019223 8092344</p>
+                    <p class="text-left">info@appstraptheme.com</p>
+                    <p class="text-left">Sunshine House, Sunville, SUN12 8LU</p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 text-muted">
                     <h3>About us</h3>
-                    <p></p>
+                    <p class="text-left">Making the web a prettier place one template at a time! We make beautiful, quality, responsive Drupal & web templates!</p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 text-muted">
                     <h3>Newsletter</h3>
-                    <p></p>
+                    <p class="text-left">Stay up to date with our latest news and product releases by signing up to our newsletter.</p>
+                    <div class="form-group">
+                        <input type="email" class="form-control-sm" value="Email">
+                        <input type="submit" class="btn btn-info btn-sm" value="Go!">
+                    </div>
                 </div>
             </div>
         </div>
