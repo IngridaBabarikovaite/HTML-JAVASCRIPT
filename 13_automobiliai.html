@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>13_automobiliai</title>
+        <style>
+            table {
+                width: 90vw;
+                border: 0.1em solid black;
+                border-collapse: collapse;
+                margin: auto;
+                text-align: center;
+            }
+            td {
+                border: 0.1em solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <td>Data</td>
+                <td>Automobilio numeris</td>
+                <td>Automobilio nuvažiuotas kelias metrais</td>
+                <td>Automobilio sugaištas laikas sekundėmis</td>
+                <td>Automobilio greitis kilometrais per valandą</td>
+            </thead>
+            <tbody>
+                <tr id="row">
+                    <td id="data"></td>
+                    <td id="numeris"></td>
+                    <td id="kelias"></td>
+                    <td id="laikas"></td>
+                    <td id="greitis"></td>
+        <script>
+            var row = ["2017-07-06 19:59:45", "LRS123", 5000, 118];
+            var greitis = (row[2] / 1000) / (row[3] / 360);
+            row.push(greitis);
+            document.getElementById("data").innerHTML = row[0];
+            document.getElementById("numeris").innerHTML = row[1];
+            document.getElementById("kelias").innerHTML = row[2];
+            document.getElementById("laikas").innerHTML = row[3];
+            document.getElementById("greitis").innerHTML = parseInt(row[4]);
+        </script>
+                </tr>
+            </tbody>
+        </table>
+        
+    </body>
+</html>
