@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Kelių automobilių įrašai lentelėje</title>
+        <style>
+        table {
+            width: 90vw;
+            border: 0.1em solid black;
+            border-collapse: collapse;
+            margin: auto;
+            text-align: center;
+        }
+        td {
+            border: 0.1em solid black;
+        }
+        </style>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <td>Data</td>
+                <td>Automobilio numeris</td>
+                <td>Automobilio nuvažiuotas kelias metrais</td>
+                <td>Automobilio sugaištas laikas sekundėmis</td>
+                <td>Automobilio greitis kilometrais per valandą</td>
+            </thead>
+            <tbody id="autos">
+            </tbody>
+        </table>
+        <script>
+            var autos = [
+                ["2017-07-06 19:59:45", "LRS123", 5000, 118],
+                ["2017-08-02 20:59:45", "LOS123", 7000, 1118],
+                ["2018-03-06 15:59:45", "LRA623", 8500, 500],
+                ["2018-04-03 21:59:45", "ABC123", 9000, 90]];
+            var tekstas = '';    
+            for (i = 0; i < autos.length; i++) {
+               tekstas +=
+                '<tr>' +
+                    '<td>' + autos[i][0] + '</td>' +
+                    '<td>' + autos[i][1] + '</td>' +
+                    '<td>' + autos[i][2] + '</td>' +
+                    '<td>' + autos[i][3] + '</td>' +
+                    '<td>' + parseInt(autos[i][2] / autos[i][3] * 3.6) + '</td>' +
+                '</tr>';
+            }
+            document.querySelector('tbody').innerHTML = tekstas;
+        </script>
+    </body>
+</html>
