@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Įvedimo laukai</title>
+        <style>
+            table {
+                border: 0.1em solid black;
+                border-collapse: collapse;
+                width: 80vw;
+                text-align: center;
+                margin-top: 3%;
+                background-color: green;
+            }
+            td {
+                border: 0.1em solid black;
+            }
+        </style>
+    </head>
+    <body>
+        Data-laikas:
+        <br><input type="text" name ="data" id="Data"><br>
+        Numeris:
+        <br><input type="text" name="numeris" id="Numeris"><br>
+        Atstumas:
+        <br><input type="text" name="atstumas" id="Atstumas"><br>
+        Laikas:
+        <br><input type="text" name="laikas" id="Laikas"><br><br>
+        <button type="button" onclick="myFunction()">Saugoti</button>
+        <table>
+            <thead>
+                <tr>
+                    <td>Data-laikas</td>
+                    <td>Numeris</td>
+                    <td>Atstumas</td>
+                    <td>Laikas</td>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <script>
+            function myFunction() {
+                var data = document.getElementById("Data").value;
+                var numeris = document.getElementById("Numeris").value;
+                var atstumas = document.getElementById("Atstumas").value;
+                var laikas = document.getElementById("Laikas").value;
+                var table = document.getElementsByTagName("table") [0];
+
+                var newRow = table.insertRow(1);
+
+                var cel1 = newRow.insertCell(0);
+                var cel2 = newRow.insertCell(1);
+                var cel3 = newRow.insertCell(2);
+                var cel4 = newRow.insertCell(3);
+
+                cel1.innerHTML = data;
+                cel2.innerHTML = numeris;
+                cel3.innerHTML = atstumas;
+                cel4.innerHTML = laikas;
+            }
+        </script>
+    </body>
+</html>
