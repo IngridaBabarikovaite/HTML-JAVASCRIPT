@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>13_trikampis</title>
+    </head>
+    <body>
+        <div id="u1"></div>
+        <div id="tipas"></div>
+        
+        <script>
+            var a = 3; b = 4; c = 5;
+            var plotas = a + b + c;
+            document.getElementById("u1").innerHTML = "Plotas S=" + plotas;
+            function tipas (a = 3, b = 4, c = 5) {
+                if (a == b == c) {
+                alert("Trikampis yra lygiakraštis");
+            }
+                else if (a == b || b == c || c == a) {
+                alert("Trikampis yra lygiašonis");
+            }
+                else if ((c * c) == (a * a) + (b * b)) {
+                alert("Trikampis yra status");
+            }
+                else if (a !== b !== c) {
+                alert("Trikampis yra įvairiakraštis");
+            }
+                else if ((a * a) > (b * b) + (c * c)) {
+                alert("Trikampis nesusidaro");
+            }
+            } 
+            document.getElementById("tipas").innerHTML = tipas();
+            
+        </script>
+    </body>
+</html>
